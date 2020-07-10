@@ -1,0 +1,21 @@
+<% var n = 'class="main"' %>
+
+<!DOCTYPE >
+<html lang='vi'>
+    <head>
+        <title>Home of Effect JavaScript</title>
+        <link rel="stylesheet" type="text/css" href = "/CSS/Home.css">
+    </head>
+    <body>
+        <% if(1<2) {%>
+            <h1 <%- n %> > Câu lệnh 1</h1>
+        <%} else {%>
+        <h1>tCâu lệnh 1</h1>
+        <%}%>
+
+    <%for(let i=0;i<10;i++){%>
+            <p>Câu for tại i = <%- i %> </p>
+    <%}%>
+    <p><%- title.length %></p>
+    </body>
+</html>
