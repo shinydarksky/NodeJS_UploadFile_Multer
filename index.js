@@ -10,8 +10,4 @@ app.get('/',(req,res)=>{
 })
 app.use('',useRouter)
 
-
-
-
-
 app.listen(port,()=>console.log(`Effect java script port ${port}`))

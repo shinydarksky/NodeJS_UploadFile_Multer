@@ -4,14 +4,13 @@ const router = express.Router()
 const multer = require('multer')
 const storage = multer.diskStorage({
     destination:(req,file,cb)=>{
-        cb('null','../Public/IMG/')
+        cb(null,'./Public/IMG/')
     },
     filename:(req,file,cb)=>{
-        cb('null',file.originalname)
+        cb(null,file.originalname)
     }
 })
-const file = multer({storage:storage})
-
+var file = multer({storage:storage})
 router.get('/upload',upload.get)
 router.post('/upload',file.single('file'),upload.post)
 module.exports = router

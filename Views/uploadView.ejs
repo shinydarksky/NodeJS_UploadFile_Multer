@@ -6,8 +6,8 @@
         <link rel="stylesheet" type="text/css" href = "/CSS/Home.css">
     </head>
     <body>
-        <form action="/upload" method="POST">
-            <input type="file" name="file" id="file"> <br/>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" > <br/>
             <input type="submit" value="Gửi file">
         </form>
     </body>
